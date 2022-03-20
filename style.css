@@ -1,0 +1,44 @@
+h1 {
+	color: blue;
+	border-bottom: 1px solid;
+	margin-bottom: 0;  
+}
+
+p{
+    float: right;
+    width: 88% ;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    width: 7em;
+    list-style-type: none;
+    position: absolute;
+    border-right: 1px solid;
+}
+
+nav li {
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 0;
+    left: 2em;
+    border: 1px solid;
+    display: none;
+}
+
+nav :hover ul li {
+    opacity: 0;
+    z-index: -10;
+    height: 10px;
+    position: absolute;
+}
+
+nav :hover ul li {
+    opacity: 0;
+    z-index: -10;
+    height: 20px;
+}
