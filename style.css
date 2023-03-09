@@ -1,44 +1,56 @@
-h1 {
-	color: blue;
-	border-bottom: 1px solid;
-	margin-bottom: 0;  
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); 
+    grid-auto-rows : 200px;
+    gap: 1rem;
 }
 
-p{
-    float: right;
-    width: 88% ;
+
+iframe {
+    pointer-events: none;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    box-shadow: 1px 3px 8px rgb(0 0 0 / 50%);
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    width: 7em;
-    list-style-type: none;
-    position: absolute;
-    border-right: 1px solid;
+
+ul {
+    list-style: none;
 }
 
-nav li {
-    position: relative;
-}
 
-nav ul ul {
+
+
+.overlay {
     position: absolute;
     top: 0;
-    left: 2em;
-    border: 1px solid;
-    display: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(43, 41, 41, 0.861);
 }
 
-nav :hover ul li {
-    opacity: 0;
-    z-index: -10;
-    height: 10px;
-    position: absolute;
+
+.overlay {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 80%;
+    place-content: center;
+    overflow: hidden;
 }
 
-nav :hover ul li {
-    opacity: 0;
-    z-index: -10;
-    height: 20px;
+
+.overlay iframe {
+    pointer-events: all;
+}
+
+
+* {
+    box-sizing: content-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
